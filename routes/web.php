@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'index');
+Route::view('/explore', view: 'explore');
+Route::view('/journals', view: 'journals');
+Route::view('/about', 'about');
+Route::view('/contact', 'contact');
+
