@@ -174,9 +174,7 @@
                     </div>
                 </div> --}}
             </nav>
-            <div class="mx-10">
-                <div class="bg-white/10 h-px w-full"></div>
-            </div>
+            <x-divider />
         </div>
         <header>
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
