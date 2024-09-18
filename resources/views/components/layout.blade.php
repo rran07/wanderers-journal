@@ -7,12 +7,17 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wanderer's Journal</title>
 
+    {{-- Links --}}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
     @vite('resources/css/app.css', 'resources/js/app.js')
 
 </head>
 
 <body class="h-full bg-black text-white">
-    <div class="min-h-full">
+    <div class="min-h-full px-10">
         <div>
             <nav>
                 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -178,7 +183,7 @@
         </div>
         <header>
             <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                <h1 class="text-3xl font-bold tracking-tight text-white"> {{ $heading }}</h1>
+                {{ $heading }}
             </div>
         </header>
         <main>

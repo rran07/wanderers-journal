@@ -5,7 +5,18 @@ export default {
     "./resources/**/*.js",
   ],
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+
+        },
+        fontFamily:{
+            "anton": ["Anton", "sans-serif"]
+        },
+        backgroundImage: {
+            'image-sm': "url('https://picsum.photos/200/300')",
+            'image-lg': "url('https://picsum.photos/1200/800')",
+          }
+    },
   },
   plugins: [],
 }
