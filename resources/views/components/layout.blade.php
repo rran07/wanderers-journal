@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-full bg-gray-100">
+<html lang="en" class="h-full">
 
 <head>
     <meta charset="UTF-8">
@@ -182,7 +182,7 @@
             <x-divider />
         </div>
         <header>
-            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <div class="bg-orange-500 mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
                 {{ $heading }}
             </div>
         </header>
