@@ -1,20 +1,25 @@
 <x-layout>
     <x-slot:heading>
-        <div class="">
+        <div>
             <div class="flex justify-between">
-                <div class="z-10 h-lvh flex justify-center items-center">
-                    <div class="">
-                        <h1 class="text-9xl font-anton text-size">The Evolution of Web Design</h1>
-                        <div>
-                            <div class="flex gap-2">
-                                <img src="https://placehold.co/40x40" alt="Author" class="rounded-full">
-                                <div>
-                                    <p>Jane Doe</p>
+                <div class="z-10">
+                    <div class="ml-4">
+                        <h1 class="text-9xl font-anton pt-20 max-w-4xl">
+                            The Evolution of
+                            Web Design
+                        </h1>
+                        <div class="py-2">
+                            <div class="flex justify-start items-center gap-2">
+                                <img src="https://placehold.co/50x50" alt="Author" class="py-3 px-3 rounded-full">
+                                <div class="font-san text-lg">
+                                    <p>
+                                        <strong>Jane Doe</strong>
+                                    </p>
                                     <p>September 18, 2024</p>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="font-sans text-md py-4">
                             <p>The world of web design has undergone significant changes over <br>
                                 the past decade. From static HTML pages to dynamic, responsive designs, <br>
                                 the evolution of web design reflects broader technological advancements <br>
@@ -23,15 +28,16 @@
                                 a seasoned designer or just starting, understanding these changes is  <br>
                                 crucial for creating effective and engaging web experiences.</p>
                         </div>
-                        <div>
-                            <a href="#"><span class="uppercase">Read More</span></a>
+                        <div class="py-5">
+                            <a href="#"><span class="uppercase border border-">Read More</span></a>
                         </div>
 
                     </div>
                 </div>
-                <div class="absolute lg:z-0 lg:center pt-8 lg:right-0">
+                <div class="absolute z-0 pt-8 lg:right-0">
                     <div>
-                        <img class="md:w-8/12 lg:w-full" src="https://picsum.photos/1100/700" alt="testing image">
+                        <img class="md:w-8/12 lg:w-full flex" src="https://picsum.photos/800/800" alt="testing image">
+
                     </div>
                 </div>
             </div>
