@@ -47,8 +47,8 @@
                         @guest
                         <div class="hidden md:block">
                             <div class="ml-4 flex items-center md:ml-6 gap-2">
-                                <x-nav-links href='/' :active="request()->is('/')">Log In</x-nav-links>
-                                <x-nav-links href='/explore' :active="request()->is('explore')">Sign up</x-nav-links>
+                                <x-nav-links href='/login' :active="request()->is('login')">Log In</x-nav-links>
+                                <x-nav-links href='/signup' :active="request()->is('signup')">Sign up</x-nav-links>
                             </div>
                         </div>
                         @endguest
