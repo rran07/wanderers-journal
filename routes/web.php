@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegisterUserController;
 use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'index');
@@ -9,6 +10,6 @@ Route::view('/about', 'about');
 Route::view('/contact', 'contact');
 Route::view('/index-main', 'index-main');
 
-Route::view('/signup', 'auth.signup');
-
+Route::get('/signup', [RegisterUserController::class, 'create']);
+Route::post('/signup', [RegisterUserController::class, 'store']);
 

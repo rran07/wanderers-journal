@@ -1,7 +1,7 @@
 <x-layout>
     <x-slot:heading>
         <section>
-            <div class="flex justify-between">
+            <div class="flex">
                 <div class="z-10">
                     <div class="ml-4">
                         <div class="pt-20">
@@ -43,11 +43,9 @@
 
                     </div>
                 </div>
-                <div class="absolute z-0 pt-8 lg:right-0">
-                    <div>
-                        <img class="md:w-8/12 lg:w-full flex" src="https://picsum.photos/800/800" alt="testing image">
-                    </div>
-                </div>
+                <div class="absolute right-0 z-0 pt-4">
+                    <img class="lg:size-10/12 2xl:size-full" src="https://picsum.photos/800/800" alt="testing image" />
+                 </div>
             </div>
             <div>
 
