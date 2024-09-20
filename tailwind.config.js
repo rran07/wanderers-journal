@@ -15,7 +15,15 @@ export default {
         backgroundImage: {
             'image-sm': "url('https://picsum.photos/200/300')",
             'image-lg': "url('https://picsum.photos/1200/800')",
-          }
+          },
+        height: {
+            'heightCustom': "490px",
+        },
+        width: {
+            'widthCustom': "480px",
+        }
+
+
     },
   },
   plugins: [],
