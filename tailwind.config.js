@@ -17,7 +17,7 @@ export default {
             'image-lg': "url('https://picsum.photos/1200/800')",
           },
         height: {
-            'heightCustom': "490px",
+            'heightCustom': "890px",
         },
         width: {
             'widthCustom': "480px",
