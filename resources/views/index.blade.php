@@ -51,6 +51,5 @@
 
             </div>
         </section>
-
     </x-slot:heading>
 </x-layout>
