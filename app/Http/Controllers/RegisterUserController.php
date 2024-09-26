@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Auth\Events\Validated;
-use Illuminate\Container\Attributes\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\Rules\Password;
 
@@ -25,5 +25,11 @@ class RegisterUserController extends Controller
             'email' => ['required', 'email'],
             'password' => ['required', Password::min('6'), 'confirmed'],
         ]);
+
+        $user = User::create($validate);
+
+        Auth::login($user);
+
+        return redirect('/');
     }
 }
