@@ -36,20 +36,99 @@
                                 crucial for creating effective and engaging web experiences.</p>
                         </div>
                         <div class="py-2 my-2">
-                            <a href="#" class="text-sm uppercase py-2 px-2 border rounded-md font-semibold">
+                            <a href="#" class="text-md uppercase py-2 px-2 border rounded-md font-semibold">
                                 Read More
                             </a>
                         </div>
-
                     </div>
                 </div>
                 <div class="absolute right-0 z-0 pt-4">
-                    <img class="lg:size-10/12 2xl:size-full" src="https://picsum.photos/800/800" alt="testing image" />
-                 </div>
-            </div>
-            <div>
-
+                    <img class="lg:size-full" src="https://picsum.photos/800/800" alt="testing image" />
+                </div>
             </div>
         </section>
     </x-slot:heading>
+
+    <x-slot:relatedArticles>
+        <section>
+            <div class="flex justify-between">
+                <div class="max-w-64 h-24 flex flex-row gap-2 place-items-center mx-2 my-2 px-3 py-3">
+                    <div class="">
+                        <img src="https://placehold.co/90x90" alt="Author" class="">
+                    </div>
+                    <div class="space-y-2">
+                        <div>
+                            <a href="#" class="bg-white rounded-full text-black font-semibold text-xs border py-2 px-2">
+                                Technology
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-base font-anton underline">
+                                The Evolution of
+                                Web Design
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-64 h-24 flex flex-row gap-2 place-items-center mx-2 my-2 px-3 py-3">
+                    <div class="">
+                        <img src="https://placehold.co/90x90" alt="Author" class="">
+                    </div>
+                    <div class="space-y-2">
+                        <div>
+                            <a href="#" class="bg-white rounded-full text-black font-semibold text-xs border py-2 px-2">
+                                Technology
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-base font-anton underline">
+                                The Evolution of
+                                Web Design
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-64 h-24 flex flex-row gap-2 place-items-center mx-2 my-2 px-3 py-3">
+                    <div class="">
+                        <img src="https://placehold.co/90x90" alt="Author" class="">
+                    </div>
+                    <div class="space-y-2">
+                        <div>
+                            <a href="#" class="bg-white rounded-full text-black font-semibold text-xs border py-2 px-2">
+                                Technology
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-base font-anton underline">
+                                The Evolution of
+                                Web Design
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="max-w-64 h-24 flex flex-row gap-2 place-items-center mx-2 my-2 px-3 py-3">
+                    <div class="">
+                        <img src="https://placehold.co/90x90" alt="Author" class="">
+                    </div>
+                    <div class="space-y-2">
+                        <div>
+                            <a href="#" class="bg-white rounded-full text-black font-semibold text-xs border py-2 px-2">
+                                Technology
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="text-base font-anton underline">
+                                The Evolution of
+                                Web Design
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </x-slot:relatedArticles>
+
 </x-layout>

@@ -166,15 +166,17 @@
             <x-divider />
         </div>
         <header>
-            <div class="mx-auto lg:max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+            <div class="mx-auto lg:max-w-7xl 2xl:max-w-full h-headerHeight px-4 py-6 sm:px-6 lg:px-8 relative">
                 {{ $heading }}
             </div>
         </header>
-        <main>
-            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-                {{ $slot }}
+        <article>
+            <div class="mx-auto lg:max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                {{ $relatedArticles }}
             </div>
-        </main>
+        </article>
+
+
     </div>
 </body>
 </x-html>

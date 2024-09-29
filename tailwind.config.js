@@ -18,6 +18,7 @@ export default {
           },
         height: {
             'heightCustom': "630px",
+            'headerHeight': "840px",
         },
         width: {
             'widthCustom': "1080px",
