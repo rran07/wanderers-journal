@@ -229,7 +229,7 @@
         <div class="">
             <div class="font-anton flex justify-center items-center mx-auto h-36">
                 <h1 class="text-5xl mx-6">
-                    Featured Categories
+                    Featured Articles
                 </h1>
             </div>
             <div>
