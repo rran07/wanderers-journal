@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+        animation: ['motion-safe'],
         colors: {
 
         },
@@ -23,8 +24,7 @@ export default {
         width: {
             'widthCustom': "1080px",
             'widthCustom1': "489px"
-        }
-
+        },
 
     },
   },
