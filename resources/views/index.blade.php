@@ -122,29 +122,18 @@
                     <p class="text-base font-semibold">Company</p>
 
                     <ul class="mt-6 space-y-5">
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                About </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Features </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Works </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Career </a>
-                        </li>
+                        <x-footer-links href="#" title="About">
+                            About
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Features">
+                            Features
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Works">
+                            Works
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Career">
+                            Career
+                        </x-footer-links>
                     </ul>
                 </div>
 
@@ -152,29 +141,18 @@
                     <p class="text-base font-semibold">Help</p>
 
                     <ul class="mt-6 space-y-4">
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Customer Support </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Delivery Details </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Terms & Conditions </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Privacy Policy </a>
-                        </li>
+                        <x-footer-links href="#" title="Customer">
+                            Customer Support
+                        </x-footer-links >
+                        <x-footer-links href="#" title="Delivery Details">
+                            Delivery Details
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Terms & Conditions">
+                            Terms & Conditions
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Privacy Policy">
+                            Privacy Policy
+                        </x-footer-links>
                     </ul>
                 </div>
 
@@ -182,59 +160,36 @@
                     <p class="text-base font-semibold">Resources</p>
 
                     <ul class="mt-6 space-y-5">
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Free eBooks </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Development Tutorial </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                How to - Blog </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                YouTube Playlist </a>
-                        </li>
+                        <x-footer-links href="#" title="Free eBooks">
+                            Free eBooks
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Development Tutorial">
+                            Development Tutorial
+                        </x-footer-links>
+                        <x-footer-links href="#" title="How to - Blog">
+                            How to - Blog
+                        </x-footer-links>
+                        <x-footer-links href="#" title="YouTube Playlist">
+                            YouTube Playlist
+                        </x-footer-links>
                     </ul>
                 </div>
 
                 <div class="lg:col-span-2">
                     <p class="text-base font-semibold">Extra Links</p>
-
                     <ul class="mt-6 space-y-5">
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Customer Support </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Delivery Details </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Terms & Conditions </a>
-                        </li>
-
-                        <li>
-                            <a href="#" title=""
-                                class="flex text-sm transition-all duration-200 hover:text-orange-600 focus:text-orange-600">
-                                Privacy Policy </a>
-                        </li>
+                        <x-footer-links href="#" title="Customer Support">
+                            Customer Support
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Delivery Details">
+                            Delivery Details
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Terms & Conditions">
+                            Terms & Conditions
+                        </x-footer-links>
+                        <x-footer-links href="#" title="Privacy Policy">
+                            Privacy Policy
+                        </x-footer-links>
                     </ul>
                 </div>
             </div>

@@ -16,5 +16,6 @@ Route::post('/signup', [RegisterUserController::class, 'store']);
 
 Route::get(uri: '/login', action: [SessionController::class, 'create']);
 Route::post('/login', action: [SessionController::class, 'store']);
+Route::post('/logout', action: [SessionController::class, 'destroy']);
 
 

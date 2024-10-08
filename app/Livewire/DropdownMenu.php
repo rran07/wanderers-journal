@@ -12,7 +12,7 @@ class DropdownMenu extends Component
     public function toggleDropdown()
     {
         $this->isOpen = !$this->isOpen;
-        dd("success");
+
     }
 
     public function render()
