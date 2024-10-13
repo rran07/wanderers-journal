@@ -40,10 +40,7 @@
                     crucial for creating effective and engaging web experiences.</p>
             </div>
             <div class="py-2 my-2">
-                <a href="#"
-                    class="lg:text-xs xl:text-md uppercase py-2 px-2 border rounded-md font-semibold">
-                    Read More
-                </a>
+                <x-button href="/">Read more</x-button>
             </div>
         </div>
     </div>
