@@ -68,7 +68,7 @@
                                     <label class="text-sm font-semibold mb-2" for="message">Message</label>
                                     <textarea placeholder="" name="message" class="bg-black border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-gray-700" rows="8" id="message" aria-label="enter your message input"></textarea>
                                 </div>
-                                <x-button type="submit">Submit</x-button>
+                                <x-button>Submit</x-button>
                             </div>
                         </form>
                     </div>

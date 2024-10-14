@@ -95,7 +95,10 @@
                             <a href="#"
                                 class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
                         </div>
-                        <div class="border-t border-gray-700 pb-3 pt-4">
+                        <div class="border-t border-gray-700 pb-3 pt-4" action="/logout" method="POST">
+                            @csrf
+
+                            @auth
                             <div class="flex items-center px-5">
                                 <div class="flex-shrink-0">
                                     <img class="h-10 w-10 rounded-full"
@@ -117,16 +120,31 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="mt-3 space-y-1 px-2">
-                                <a href="#"
+                            @endauth
+
+                            @auth 
+                            <div action="/logout" method="POST" class="mt-3 space-y-1 px-2">
+                                @csrf
+                                <button
+                                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Your
+                                    Profile</button>
+                                <button
+                                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Settings</button>
+                                <button type="submit"
+                                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign
+                                    out</button>
+                            </div>
+                            {{-- <div class="mt-3 space-y-1 px-2" >
+                                <a href="/yourprofile"
                                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Your
                                     Profile</a>
-                                <a href="#"
+                                <a href="Settings"
                                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Settings</a>
-                                <a href="#"
+                                <a href="/logout" type="submit"
                                     class="block rounded-md px-3 py-2 text-base font-medium text-gray-400 hover:bg-gray-700 hover:text-white">Sign
                                     out</a>
-                            </div>
+                            </div> --}}
+                            @endauth
                         </div>
                     </div>
                 </nav>

@@ -5,7 +5,7 @@
 <body>
     <div class="container mx-auto">
         <div class="flex justify-center items-center min-h-screen px-10 py-10">
-            <div class="">
+            <div>
                 <div class="rounded-lg shadow-lg border">
                     <div class="grid grid-cols-2">
                         <div class="">
