@@ -21,7 +21,8 @@ class SessionController extends Controller
 
         if (! Auth::attempt($attributes)) {
             throw ValidationException::withMessages([
-                'email' => 'Sorry, those credential do not match'
+                'email' => 'Sorry, those credential do not match',
+                'password' => 'Sorry, those credential do not match'
             ]);
         }
 

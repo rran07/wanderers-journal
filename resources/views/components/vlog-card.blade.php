@@ -1,12 +1,12 @@
-<div class="grid grid-cols-2 justify-items-stretch items-center transform motion-safe:hover:scale-110 duration-300">
+<div class="grid items-center grid-cols-2 duration-300 transform justify-items-stretch motion-safe:hover:scale-110">
     <div>
-        <img src="https://picsum.photos/600/380" alt="testing image" />
+        <img src="https://picsum.photos/seed/{{ rand(0, 10000) }}/600/380" alt="testing image" />
     </div>
-    <div class="py-6 px-2">
+    <div class="px-2 py-6">
         <div>
             <div class="py-2">
                 <a href="#"
-                    class="bg-white rounded-full text-black font-semibold sm:text-xs border py-2 px-2">
+                    class="px-2 py-2 font-semibold text-black bg-white border rounded-full sm:text-xs">
                     Technology
                 </a>
             </div>
@@ -16,7 +16,7 @@
             </h1>
             <div class="">
                 <div class="">
-                    <div class="flex place-items-center gap-2 py-3">
+                    <div class="flex gap-2 py-3 place-items-center">
                         <div class="">
                             <img src="https://placehold.co/50x50" alt="Author" class="rounded-full">
                         </div>
@@ -33,19 +33,19 @@
                     <div class="py-2 mx-2">
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, ut.</p>
                     </div>
-                    <div class="flex justify-between items-center py-4 mx-4">
+                    <div class="flex items-center justify-between py-4 mx-4">
                         <div>
                             <a href="#"
-                                class="lg:text-xs xl:text-md uppercase py-2 px-2 border rounded-md font-semibold">
+                                class="px-2 py-2 font-semibold uppercase border rounded-md lg:text-xs xl:text-md">
                                 Read More
                             </a>
                         </div>
                         <div class="flex flex-row items-center gap-2">
-                            <p class="text-xs font-medium font-sans px-2 mr-2">
+                            <p class="px-2 mr-2 font-sans text-xs font-medium">
                                 SHARE
                             </p>
                             <div class="flex flex-row gap-1">
-                                <div class="rounded-full border-2 py-3 px-3">
+                                <div class="px-3 py-3 border-2 rounded-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="15"
                                         height="15">
                                         <path fill="#ffffff"
@@ -53,7 +53,7 @@
                                     </svg>
                                 </div>
 
-                                <div class="rounded-full border-2 py-3 px-3">
+                                <div class="px-3 py-3 border-2 rounded-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15"
                                         height="15">
                                         <path fill="#ffffff"
@@ -61,7 +61,7 @@
                                     </svg>
                                 </div>
 
-                                <div class="rounded-full border-2 py-3 px-3">
+                                <div class="px-3 py-3 border-2 rounded-full">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="15"
                                         height="15">
                                         <path fill="#ffffff"

@@ -4,18 +4,18 @@
 
 <body>
     <div class="container mx-auto">
-        <div class="flex justify-center items-center min-h-screen px-10 py-10">
+        <div class="flex items-center justify-center min-h-screen px-10 py-10">
             <div>
-                <div class="rounded-lg shadow-lg border">
+                <div class="border rounded-lg shadow-lg">
                     <div class="grid grid-cols-2">
                         <div class="">
-                            <img class="rounded-tl-md rounded-bl-md  overflow-hidden" src="https://picsum.photos/1000/1000" alt="image">
+                            <img class="overflow-hidden rounded-tl-md rounded-bl-md" src="https://picsum.photos/1000/1000" alt="image">
                         </div>
-                        <div class="px-6 py-12 lg:px-8 rounded-md">
+                        <div class="px-6 py-12 rounded-md lg:px-8">
                             <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-                                <img class="mx-auto h-10 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=gray&shade=600"
+                                <img class="w-auto h-10 mx-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=gray&shade=600"
                                     alt="Your Company">
-                                <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign up now!</h2>
+                                <h2 class="mt-10 text-2xl font-bold leading-9 tracking-tight text-center text-gray-900">Sign up now!</h2>
                             </div>
 
                             <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -29,7 +29,7 @@
                                                 class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
                                         </div>
                                         @error('username')
-                                            <p class="text-xs text-red-500 font-semibold mt-1">{{ $message }}</p>
+                                            <p class="mt-1 text-xs font-semibold text-red-500">{{ $message }}</p>
                                         @enderror
                                     </div>
                                     <div class="pr-2">
@@ -39,7 +39,7 @@
                                                 class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
                                         </div>
                                         @error('first_name')
-                                            <p class="text-xs text-red-500 font-semibold mt-1">{{ $message }}</p>
+                                            <p class="mt-1 text-xs font-semibold text-red-500">{{ $message }}</p>
                                          @enderror
                                     </div>
                                     <div>
@@ -49,7 +49,7 @@
                                                 class="block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
                                         </div>
                                         @error('last_name')
-                                            <p class="text-xs text-red-500 font-semibold mt-1">{{ $message }}</p>
+                                            <p class="mt-1 text-xs font-semibold text-red-500">{{ $message }}</p>
                                         @enderror
                                     </div>
                                     <div class="col-span-2">
@@ -60,7 +60,7 @@
                                                 class="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
                                         </div>
                                         @error('email')
-                                            <p class="text-xs text-red-500 font-semibold mt-1">{{ $message }}</p>
+                                            <p class="mt-1 text-xs font-semibold text-red-500">{{ $message }}</p>
                                          @enderror
                                     </div>
 
@@ -76,7 +76,7 @@
                                                 class="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
                                         </div>
                                         @error('password')
-                                            <p class="text-xs text-red-500 font-semibold mt-1">{{ $message }}</p>
+                                            <p class="mt-1 text-xs font-semibold text-red-500">{{ $message }}</p>
                                         @enderror
                                     </div>
                                     <div>
@@ -91,7 +91,7 @@
                                                 class="block w-full rounded-md border-0 py-1.5 px-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6">
                                         </div>
                                         @error('password')
-                                            <p class="text-xs text-red-500 font-semibold mt-1">{{ $message }}</p>
+                                            <p class="mt-1 text-xs font-semibold text-red-500">{{ $message }}</p>
                                         @enderror
                                     </div>
 
@@ -102,7 +102,7 @@
                                     </div>
                                 </form>
 
-                                <p class="mt-10 text-center text-sm text-gray-500">
+                                <p class="mt-10 text-sm text-center text-gray-500">
                                     Already have account?
                                     <a href="/login" class="font-semibold leading-6 text-blue-600 hover:text-blue-500">Log in now!</a>
                                 </p>
