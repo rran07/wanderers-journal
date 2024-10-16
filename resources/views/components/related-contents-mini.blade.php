@@ -1,4 +1,4 @@
-<div class="max-w-64 h-24 flex flex-row gap-2 place-items-center px-2 transform motion-safe:hover:scale-110 duration-300 hover:border-2 border-white/25">
+<div class="flex flex-row h-24 gap-2 px-2 duration-300 transform max-w-64 place-items-center motion-safe:hover:scale-110">
     <div class="">
         <img src="https://placehold.co/90x90" alt="Author" class="">
     </div>
@@ -9,7 +9,7 @@
             </a>
         </div>
         <div>
-            <a href="#" class="text-base font-anton underline">
+            <a href="#" class="text-base underline font-anton">
                 The Evolution of
                 Web Design
             </a>
