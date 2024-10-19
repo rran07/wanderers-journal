@@ -5,7 +5,7 @@
         </section>
     </x-slot:heading>
     <section>
-        <div class="flex justify-between h-48 items-center">
+        <div class="flex items-center justify-between h-48">
             <x-related-contents-mini />
             <x-related-contents-mini />
             <x-related-contents-mini />
@@ -16,14 +16,14 @@
 
     {{-- this is the related categories --}}
     <section>
-        <div class="grid grid-flow-row h-auto w-auto">
-            <div class="font-anton flex justify-center items-center mx-auto h-36">
-                <h1 class="text-5xl mx-6">
+        <div class="grid w-auto h-auto grid-flow-row">
+            <div class="flex items-center justify-center mx-auto font-anton h-36">
+                <h1 class="mx-6 text-5xl">
                     Featured Categories
                 </h1>
             </div>
             <div
-                class="max-w-7xl h-auto grid grid-cols-3 grid-flow-row justify-items-center items-center gap-10 px-2 py-2 pb-14">
+                class="grid items-center h-auto grid-flow-row grid-cols-3 gap-10 px-2 py-2 max-w-7xl justify-items-center pb-14">
                 <x-categories-card />
                 <x-categories-card />
                 <x-categories-card />
@@ -40,8 +40,8 @@
     {{-- this is the Featured Articles --}}
     <section>
         <div class="h-[1970px] pd-14">
-            <div class="font-anton flex justify-center items-center mx-auto h-48">
-                <h1 class="text-5xl mx-6">
+            <div class="flex items-center justify-center h-48 mx-auto font-anton">
+                <h1 class="mx-6 text-5xl">
                     Featured Articles
                 </h1>
             </div>
@@ -58,13 +58,13 @@
 
     <section>
         <div class="h-[600px] my-[60px]">
-            <div class="m-auto grid grid-cols-2 justify-items-stretch items-center gap-2 h-full w-full">
+            <div class="grid items-center w-full h-full grid-cols-2 gap-2 m-auto justify-items-stretch">
                 <div class="flex justify-center">
                     <div class="flex flex-col mx-4 my-4 space-y-10">
                         <div>
-                            <h4 class="text-lg font-semibold font-sans">Our Story</h4>
+                            <h4 class="font-sans text-lg font-semibold">Our Story</h4>
                         </div>
-                        <div class="font-anton text-6xl">
+                        <div class="text-6xl font-anton">
                             <h1>A little bit about Wanderer's Journal</h1>
                         </div>
                         <div class="max-w-[500px] text-base font-sans">
@@ -80,10 +80,9 @@
                             </p>
                         </div>
                         <div>
-                            <a href="#"
-                                class="lg:text-xs xl:text-md uppercase py-2 px-2 border rounded-md font-semibold">
+                            <x-button href="/">
                                 Read More
-                            </a>
+                            </x-button>
                         </div>
                     </div>
                 </div>
@@ -202,7 +201,7 @@
                 <ul class="flex items-center mt-5 space-x-3 md:order-3 sm:mt-0">
                     <li>
                         <a href="#" title=""
-                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-gray-600 hover:text-white focus:text-white hover:bg-gray-600 hover:border-gray-600 focus:border-gray-600">
                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 fill="currentColor">
                                 <path
@@ -214,7 +213,7 @@
 
                     <li>
                         <a href="#" title=""
-                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-gray-600 hover:text-white focus:text-white hover:bg-gray-600 hover:border-gray-600 focus:border-gray-600">
                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 fill="currentColor">
                                 <path
@@ -226,7 +225,7 @@
 
                     <li>
                         <a href="#" title=""
-                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-gray-600 hover:text-white focus:text-white hover:bg-gray-600 hover:border-gray-600 focus:border-gray-600">
                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 fill="currentColor">
                                 <path
@@ -242,7 +241,7 @@
 
                     <li>
                         <a href="#" title=""
-                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-orange-600 hover:text-white focus:text-white hover:bg-orange-600 hover:border-orange-600 focus:border-orange-600">
+                            class="flex items-center justify-center text-gray-800 transition-all duration-200 bg-transparent border border-gray-300 rounded-full w-7 h-7 focus:bg-gray-600 hover:text-white focus:text-white hover:bg-gray-600 hover:border-gray-600 focus:border-gray-600">
                             <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                                 fill="currentColor">
                                 <path fill-rule="evenodd" clip-rule="evenodd"

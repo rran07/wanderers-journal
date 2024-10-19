@@ -1,7 +1,7 @@
 <div class="flex items-center py-2 my-2 flex-cols">
     <div class="relative">
         <div class="w-auto h-auto">
-            <img src="https://picsum.photos/seed/{{ rand(0, 10000) }}/340/340" alt="testing image" />
+            <img src="https://picsum.photos/seed/{{ rand(0, 10000) }}/340/340" alt="testing image"/>
         </div>
         <div class="absolute inset-x-0 flex justify-center bottom-8">
             <a href="#"
