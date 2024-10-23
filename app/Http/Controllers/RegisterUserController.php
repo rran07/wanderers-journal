@@ -16,7 +16,7 @@ class RegisterUserController extends Controller
         return view('auth.signup');
     }
 
-    public function store(Request $request)
+    public function store()
     {
         $validate = request()->validate([
             'username' => ['required'],
@@ -24,8 +24,12 @@ class RegisterUserController extends Controller
             'last_name' => ['required'],
             'email' => ['required', 'email', 'unique:users,email'],
             'password' => ['required', Password::min('6'), 'confirmed'],
-            'profile_image' => ['required|image|mimes:jpeg,png,jpg,gif,webp|max:2048'],
+            'profile_image' => 'required|image|mimes:jpeg,png,jpg,gif|max:5760',
         ]);
+
+        if (request()->hasFile('profile_image')) {
+            $validate['profile_image'] = request()->file('profile_image')->store('profile_images', 'public');
+        }
 
         $user = User::create($validate);
 

@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('profile_image', 50)->default(url('https://placehold.co/50x50'));
+            $table->string('profile_image', 50);
             $table->rememberToken();
             $table->timestamps();
         });
