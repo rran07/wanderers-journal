@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                                <form class="grid grid-cols-2 space-y-2" method="POST" action="/signup" enctype="multipart/form-data">
+                                <form id="uploadForm" class="grid grid-cols-2 space-y-2" method="POST" action="/signup" enctype="multipart/form-data">
                                     @csrf
 
                                     <div class="col-span-2">
@@ -97,10 +97,7 @@
                                     <div class="col-span-full">
                                         <label for="photo" class="block text-sm font-medium leading-6 text-gray-900">Profile Photo</label>
                                         <div class="flex items-center mt-2 gap-x-3">
-                                            <input class="rounded-md bg-white px-2.5 py-1.5 text-xs font-semibold text-gray-900" type="file" name="image" id="image" />
-                                            <button type="image"
-                                                class="rounded-md bg-white px-2.5 py-1.5 text-xs font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50">Upload
-                                                Image</button>
+                                            <input class="rounded-md bg-white px-2.5 py-1.5 text-xs font-semibold text-gray-900" type="file" name="profile_image" id="profile_image" />
                                         </div>
                                     </div>
                                     <div class="col-span-2 pt-6">
