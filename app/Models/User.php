@@ -11,6 +11,11 @@ class User extends Authenticatable
 {
     use HasFactory, Notifiable;
 
+    public function Article()
+    {
+        return $this->belongsTo(User::class);
+    }
+
     /**
      * The attributes that are mass assignable.
      *
@@ -22,7 +27,6 @@ class User extends Authenticatable
         'last_name',
         'email',
         'password',
-        'profile_image',
     ];
 
     /**

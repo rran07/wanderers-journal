@@ -2,14 +2,15 @@
 
 use App\Http\Controllers\RegisterUserController;
 use App\Http\Controllers\SessionController;
+use App\Livewire\DropdownMenu;
 use Illuminate\Support\Facades\Route;
 
-Route::view('/', 'index');
-Route::view('/explore', view: 'explore');
-Route::view('/journals', view: 'journals');
-Route::view('/about', 'about');
-Route::view('/contact', 'contact');
-Route::view('/index-main', 'index-main');
+Route::view('/', 'blog.index');
+Route::view('/explore', view: 'blog.explore');
+Route::view('/journals', view: 'blog.journals');
+Route::view('/about', 'blog.about');
+Route::view('/contact', 'blog.contact');
+Route::view('/index-main', 'blog.index-main');
 
 Route::middleware('guest')->group(function () {
     Route::get('/signup', [RegisterUserController::class, 'create']);

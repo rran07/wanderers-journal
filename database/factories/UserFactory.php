@@ -24,7 +24,6 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'profile_image' => url('https://placehold.co/50x50'),
             'username' => fake()->name(),
             'first_name' => fake()->name(),
             'last_name' => fake()->name(),
