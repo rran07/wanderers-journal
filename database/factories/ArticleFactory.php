@@ -19,9 +19,9 @@ class ArticleFactory extends Factory
         return [
             'title' => fake()->title(),
             'vlog_overview' => fake()->sentences(1),
-            'description' => fake()->paragraphs(5, true),
+            'description' => fake()->paragraphs(3, true),
             'author' => fake()->name(),
-            'published' => fake()->date($format = 'm-d-Y'),
+            'published' => fake()->date('Y-m-d'),
             'profile_image' => url('https://placehold.co/50x50'),
         ];
     }

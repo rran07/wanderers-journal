@@ -13,7 +13,7 @@ class User extends Authenticatable
 
     public function Article()
     {
-        return $this->belongsTo(User::class);
+        return $this->hasMany(Article::class);
     }
 
     /**

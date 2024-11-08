@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('article_listings', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('vlog_overview');
-            $table->string('description');
+            $table->tinyText('vlog_overview');
+            $table->longText('description');
             $table->string('author');
             $table->date('published');
             $table->string('profile_image');
