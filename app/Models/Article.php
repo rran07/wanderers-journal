@@ -19,8 +19,12 @@ class Article extends Model
         'profile_image',
     ];
 
-    public function User()
+    public function user()
     {
         return $this->belongsTo(User::class);
+    }
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class, foreignPivotKey: "article_listings_id");
     }
 }

@@ -8,4 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Tag extends Model
 {
     use HasFactory;
+
+    public function article()
+    {
+        return $this->belongsToMany(Article::class, relatedPivotKey: 'article_listings_id');
+    }
 }

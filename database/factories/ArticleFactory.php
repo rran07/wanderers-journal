@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -17,9 +18,10 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            'title' => fake()->title(),
-            'vlog_overview' => fake()->sentences(1),
-            'description' => fake()->paragraphs(3, true),
+            'tag_id' => Tag::factory(),
+            'title' => fake()->sentences(1, true),
+            'vlog_overview' => fake()->sentences(1, true),
+            'description' => fake()->paragraphs(10, true),
             'author' => fake()->name(),
             'published' => fake()->date('Y-m-d'),
             'profile_image' => url('https://placehold.co/50x50'),
