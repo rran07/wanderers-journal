@@ -2,7 +2,9 @@
 
 namespace Database\Factories;
 
+use App\Models\Category;
 use App\Models\Tag;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -18,7 +20,21 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
-            'tag_id' => Tag::factory(),
+            'genre' => fake()->randomElement([
+                'Technology',
+                'Lifestyle',
+                'Comedy',
+                'Travel',
+                'Educational',
+                'Fitness and Health',
+                'Fashion and Beauty',
+                'Food',
+                'Cooking',
+                'Gaming',
+                'Art',
+                'Music',
+            ]),
+            'user_id' => User::factory(),
             'title' => fake()->sentences(1, true),
             'vlog_overview' => fake()->sentences(1, true),
             'description' => fake()->paragraphs(10, true),

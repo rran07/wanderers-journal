@@ -3,13 +3,12 @@
 namespace Database\Factories;
 
 use App\Models\Article;
-use App\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Tag>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
  */
-class TagFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -19,6 +18,7 @@ class TagFactory extends Factory
     public function definition(): array
     {
         return [
+            'article_id' => Article::factory(),
             'genre' => fake()->randomElement([
                 'Technology',
                 'Lifestyle',
