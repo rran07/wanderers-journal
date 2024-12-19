@@ -1,5 +1,5 @@
 <div class="flex items-center py-2 my-2 flex-cols">
-    <div class="relative">
+    <div class="relative duration-300 motion-safe:hover:scale-110">
         <div class="w-auto h-auto">
             <img src="https://picsum.photos/seed/{{ rand(0, 10000) }}/340/340" alt="testing image"/>
         </div>
