@@ -1,6 +1,6 @@
 <div class="flex flex-row h-24 gap-2 px-2 duration-300 transform max-w-64 place-items-center motion-safe:hover:scale-110">
     <div class="">
-        <img src="https://placehold.co/90x90" alt="Author" class="">
+        <img src="https://picsum.photos/seed/{{ rand(0, 10000) }}/90/90" alt="Author" class="">
     </div>
     <div class="space-y-1">
         <div>

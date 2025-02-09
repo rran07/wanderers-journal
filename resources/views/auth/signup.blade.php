@@ -18,8 +18,8 @@
                                 <h2 class="mt-10 text-2xl font-bold leading-9 tracking-tight text-center text-gray-900">Sign up now!</h2>
                             </div>
 
-                            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-                                <form id="uploadForm" class="grid grid-cols-2 space-y-2" method="POST" action="/signup" enctype="multipart/form-data">
+                            <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">=======
+                                <form class="grid grid-cols-2 space-y-2" method="POST" action="/signup">
                                     @csrf
 
                                     <div class="col-span-2">

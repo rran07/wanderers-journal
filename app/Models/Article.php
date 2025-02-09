@@ -8,4 +8,19 @@ use Illuminate\Database\Eloquent\Model;
 class Article extends Model
 {
     use HasFactory;
+
+    public $table = 'article_listings';
+    protected $fillable = [
+        'title',
+        'vlog_overview',
+        'description',
+        'author',
+        'published',
+        'profile_image',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

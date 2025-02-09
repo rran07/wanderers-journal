@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Category;
+use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -11,12 +13,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('article_list', function (Blueprint $table) {
+        Schema::create('article_listings', function (Blueprint $table) {
             $table->id();
+            $table->foreignIdFor(User::class);
+            $table->string('genre');
             $table->string('title');
+            $table->tinyText('vlog_overview');
+            $table->longText('description');
             $table->string('author');
             $table->date('published');
-            $table->string('description');
+            $table->string('profile_image');
             $table->timestamps();
         });
     }
@@ -26,6 +32,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('article_list');
+        Schema::dropIfExists('article_listings');
     }
 };

@@ -2,15 +2,13 @@
 
 namespace Database\Factories;
 
-use App\Models\Category;
-use App\Models\Tag;
-use App\Models\User;
+use App\Models\Article;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Article>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Category>
  */
-class ArticleFactory extends Factory
+class CategoryFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -20,6 +18,7 @@ class ArticleFactory extends Factory
     public function definition(): array
     {
         return [
+            'article_id' => Article::factory(),
             'genre' => fake()->randomElement([
                 'Technology',
                 'Lifestyle',
@@ -33,14 +32,7 @@ class ArticleFactory extends Factory
                 'Gaming',
                 'Art',
                 'Music',
-            ]),
-            'user_id' => User::factory(),
-            'title' => fake()->sentences(1, true),
-            'vlog_overview' => fake()->sentences(1, true),
-            'description' => fake()->paragraphs(10, true),
-            'author' => fake()->name(),
-            'published' => fake()->date('Y-m-d'),
-            'profile_image' => url('https://placehold.co/50x50'),
+            ])
         ];
     }
 }
