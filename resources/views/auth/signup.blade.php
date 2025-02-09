@@ -94,12 +94,6 @@
                                             <p class="mt-1 text-xs font-semibold text-red-500">{{ $message }}</p>
                                         @enderror
                                     </div>
-                                    <div class="col-span-full">
-                                        <label for="photo" class="block text-sm font-medium leading-6 text-gray-900">Profile Photo</label>
-                                        <div class="flex items-center mt-2 gap-x-3">
-                                            <input class="rounded-md bg-white px-2.5 py-1.5 text-xs font-semibold text-gray-900" type="file" name="profile_image" id="profile_image" />
-                                        </div>
-                                    </div>
                                     <div class="col-span-2 pt-6">
                                         <button type="submit"
                                             class="flex w-full justify-center rounded-md bg-blue-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">Sign
@@ -111,7 +105,7 @@
 
                                 <p class="mt-10 text-sm text-center text-gray-500">
                                     Already have account?
-                                    <a href="/login" class="font-semibold leading-6 text-blue-600 hover:text-blue-500">Log in now!</a>
+                                    <a href="/login" class="font-semibold leading-6 text-blue-600 hover:text-blue-500 pl-2">Log in now!</a>
                                 </p>
                             </div>
                         </div>

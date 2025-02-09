@@ -58,7 +58,7 @@
 
                         <p class="mt-10 text-sm text-center text-gray-500">
                             Don't have account yet?
-                            <a href="/signup" class="font-semibold leading-6 text-blue-600 hover:text-blue-500">Sign up now!</a>
+                            <a href="/signup" class="font-semibold leading-6 text-blue-600 hover:text-blue-500 pl-2">Sign up now!</a>
                         </p>
                     </div>
                 </div>
